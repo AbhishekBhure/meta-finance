@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Finance</title>
+    <link rel="icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@400;500;600&family=Red+Hat+Display:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-primary-black">
+    <nav class="p-5 bg-transparent flex md:items-center md:justify-between">
+        <div class="gradient-01"></div>
+        <div
+            class="flex w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] flex flex-wrap items-center  md:justify-between mx-auto p-4">
+            <a class="text-2xl outline-none items-center f-b logo-span text-white">
+                <img src="" alt=""> Finance
+            </a>
+            <span class="text-3xl cursor-ponter mx-2 md:hidden absolute right-[24px]">
+                <ion-icon name="menu-outline" onclick='Menu(this)'></ion-icon>
+            </span>
+
+
+            <div class="flex md:order-2">
+                <a href="#">
+                    <button
+                        class="bg-[#51F585] rounded hover:bg-[#1fd459] hover:text-white duration-500 text-xl text-dark font-bold w-[120px] h-[37px] text-center lg:w-[129px] lg:h-[41px] md:mx-7 hidden md:block ">Launch
+                        App</button>
+                </a>
+
+            </div>
+
+            <div>
+
+                <ul
+                    class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-white">
+                    <li class="mx-4 my-6 md:my-0 nav-item">
+                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#">Home</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0 nav-item">
+                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#">Vaults</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0 nav-item">
+                        <a class=" nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#roadmap">Roadmaps</a>
+                    </li>
+                    <li class=" mx-4 my-6 md:my-0 nav-item">
+                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#">Docs</a>
+                    </li>
+                    <a href="#">
+                        <button
+                            class="bg-[#51F585] rounded hover:bg-[#1fd459]  duration-500 text-xl text-dark f-b w-[120px] h-[37px] text-center lg:w-[129px] lg:h-[41px] md:mx-7 block md:hidden">Launch
+                            App</button>
+                    </a>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto">
+        <div class="grid grid-cols-12   gap-6 lg:gap-0 ">
+            <div class=" col-span-12 lg:col-span-5  block lg:hidden ">
+                <div class="lg:mt-0 lg:pt-10 xl:pt-16 ">
+                    <img src="./img/hero-img.png" alt=""
+                        class="w-[85%] sm:w-[66%] ml-auto mr-auto h-auto object-contain">
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-7 ">
+                <div class="lg:pt-32  text-center lg:text-left">
+                    <h2 class="text-2xl sm:text-6xl  md:text-8xl text-white font-bold">Meta Finance
+                    </h2><br>
+                    <h3 class="text-lg sm:text-3xl md:text-4xl text-white f-b">The Zksync Era liquidity hub</h3>
+                    <h4 class="text-white sm:text-lg md:text-2xl f-sb">Generate sustainable yield &amp;
+                        invest like
+                        a Venture Capitalist</h4>
+                </div>
+
+            </div>
+            <div class="col-span-12 lg:col-span-5 hidden lg:block">
+                <div class="-mt-20 lg:mt-0 lg:pt-0 xl:pt-16">
+                    <img src="./img/hero-img.png" alt=""
+                        class="w-full h-auto lg:h-[535px] xl:h-[587px] object-contain ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End-->
+
+    <!-- About Section -->
+    <div class="about-bg">
+        <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto ">
+            <h2 class="text-white text-xl sm:text-5xl f-f-b text-center py-10 hidden sm:block">About Meta Finance</h2>
+            <h2 class="text-white text-xl sm:text-5xl f-f-b text-center py-10  sm:hidden">About</h2>
+            <div class="grid grid-cols-12   gap-6 py-10 ">
+                <div class="col-span-12 lg:col-span-6  ">
+                    <img src="./img/about-01.png" alt="about-01"
+                        class="w-[70%] h-auto sm:w-[504px] sm:h-[336px] ml-auto mr-auto xl:mr-0 ">
+                </div>
+                <div class="col-span-12 lg:col-span-6 text-center lg:text-end ">
+                    <h2 class="text-white text-xl sm:text-4xl  pt-10">
+                        About Meta Finance
+                    </h2>
+                    <p class="sm:text-lg text-tiny text-white">Sigma Finance is a Community driven passive income and
+                        asset management protocol that gives investors exclusive investment opportunities in the zksync
+                        ecosystem</p>
+                    <button class="  text-xl py-8 bg-transparent">
+                        <ul class="inline-flex">
+                            <li class="sm:block hidden ">
+                                <ion-icon name="arrow-back-outline" class="text-[#51F585] text-[1.8rem]"></ion-icon>
+                            </li>
+                            <li class="sm:ml-3">
+                                <a href="#" class="text-[#51F585]">
+                                    Read More
+                                </a>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+                <div class="col-span-12 lg:col-span-6   lg:hidden ">
+                    <img src="./img/about-02.svg" alt="about-02" class="w-[50%] h-auto  ml-auto mr-auto xl:mr-0 ">
+                </div>
+                <div class="col-span-12 lg:col-span-6 text-center lg:text-left">
+                    <h2 class="text-white text-xl sm:text-4xl   lg:pt-10 ">Our Mission</h2>
+                    <p class="sm:text-lg text-tiny text-white">Our mission is to become an essential liquidity and
+                        founding center for projects that want to launch on Zksync Era </p>
+                    <button class="  text-xl py-8 bg-transparent">
+                        <ul class="inline-flex">
+
+                            <li class="sm:mr-3">
+                                <a href="#" class="text-[#51F585]">
+                                    Read More
+                                </a>
+                            </li>
+                            <li class="sm:block hidden ">
+                                <ion-icon name="arrow-forward-outline" class="text-[#51F585] text-[1.8rem]"></ion-icon>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+                <div class="col-span-12 lg:col-span-6  hidden lg:block ">
+                    <img src="./img/about-02.svg" alt="about-02" class=" w-[61%] h-auto  ml-auto mr-auto xl:mr-0 ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End-->
+
+    <!-- LaunchPad Section -->
+    <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto py-20 ">
+        <h2 class="text-xl sm:text-5xl lg:text-6xl f-f-b text-white text-center">LaunchPad</h2>
+        <img src="./img/launchpad.svg" alt="launchpad" class="w-[90%] ml-auto mr-auto h-auto py-10">
+        <div class="w-10/12 lg:w-9/12 mx-auto py-5">
+            <p class="text-white f-f-m text-center text-lg sm:text-2xl lg:text-3xl">Sigma Finance aims to launch
+                zkSync’s most promising projects</p>
+        </div>
+    </div>
+    <!-- LaunchPad Section End-->
+
+    <!-- RoadMap Section -->
+    <div id="roadmap">
+        <div class=" w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto py-20  ">
+            <h2 class="text-xl sm:text-5xl lg:text-6xl f-f-b text-[#51F585] text-center">
+                Road<span class="text-white">map</span>
+            </h2>
+            <img src="./img/roadmap.svg" alt="roadmap" class="w-[85%] ml-auto mr-auto py-20">
+            <div class="text-center py-14">
+                <a href="#">
+                    <button
+                        class="text-white   w-[328px] h-[56px] sm:h-[68px] rounded-[48px]  bg-tranparent border docBtn sm:text-xl    text-center"
+                        type="button">Read documentation</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- RoadMap Section End-->
+
+    <!-- Blog Section -->
+    <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto pb-20">
+        <h3 class="text-white text-xl lg:text-5xl  text-center ">Recent Blog Posts</h3>
+        <div class="border border-grey mt-20 "></div>
+        <ul class="w-full sm:inline-flex">
+            <li class="w-full">
+                <a href="#">
+                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left">
+                        Public Presale Round and Launch Tokenomics
+                    </h4>
+                </a>
+            </li>
+            <li>
+                <img src="./img/blog-01.svg" alt="blog-01" class=" w-[146px] h-[90px] my-8 ml-auto mr-auto">
+            </li>
+        </ul>
+        <div class="border border-grey"></div>
+        <ul class="w-full sm:inline-flex">
+            <li class="w-full">
+                <a href="#">
+                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left">
+                        What is Meta Finance ?
+                    </h4>
+                </a>
+            </li>
+            <li>
+                <img src="./img/blog-02.svg" alt="blog-01" class=" w-[146px] h-[90px] my-8 ml-auto mr-auto">
+            </li>
+        </ul>
+        <div class="border border-grey"></div>
+        <ul class="w-full sm:inline-flex">
+            <li class="w-full">
+                <a href="#">
+                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left">
+                        What is coming after $Meta launchpad?
+                    </h4>
+                </a>
+            </li>
+            <li>
+                <img src="./img/blog-03.svg" alt="blog-01" class=" w-[146px] h-[90px] my-8 ml-auto mr-auto">
+            </li>
+        </ul>
+    </div>
+    <!-- Blog Section End-->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="py-20 bg-footer">
+            <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto">
+                <ul class=" inline-flex  w-full justify-center sm:justify-start">
+                    <li>
+                        <a href="#">
+                            <img src="./img/foot-01.svg" alt="foot-01" class="w-[2.25rem]">
+                        </a>
+                    </li>
+                    <li class="ml-10">
+                        <a href="#">
+                            <img src="./img/foot-02.svg" alt="foot-02" class="w-[2.25rem]">
+                        </a>
+                    </li>
+                    <li class="ml-10">
+                        <a href="#">
+                            <img src="./img/foot-03.svg" alt="foot-03" class="w-[2.25rem]">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End-->
+
+
+
+    <!-- GSAP js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/MotionPathPlugin.min.js"
+        integrity="sha512-xkBzquq6NgaDVAs0BtAGIfjvxCUdAhmKBpw6NMe+PrTzo50XR/1lQuNNN6tl++7f5GgcEwoTe60ctpg+bzTEwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
