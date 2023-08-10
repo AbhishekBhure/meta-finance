@@ -24,18 +24,21 @@
         <div class="gradient-01"></div>
         <div
             class="flex w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] flex flex-wrap items-center  md:justify-between mx-auto p-4">
-            <a class="text-2xl outline-none items-center f-b logo-span text-white">
-                <img src="" alt=""> Finance
+            <a class="text-2xl outline-none items-center f-b logo-span text-white flex">
+                <img src="/img/favicon.ico" alt="logo"> <span class="ml-4 hidden md:block uppercase font-pop">Meta
+                    Finance
+                </span>
+
             </a>
             <span class="text-3xl cursor-ponter mx-2 md:hidden absolute right-[24px]">
-                <ion-icon name="menu-outline" onclick='Menu(this)'></ion-icon>
+                <ion-icon name="menu-outline" class="text-white" onclick='Menu(this)'></ion-icon>
             </span>
 
 
-            <div class="flex md:order-2">
+            <div class=" flex md:order-2">
                 <a href="#">
                     <button
-                        class="bg-[#51F585] rounded hover:bg-[#1fd459] hover:text-white duration-500 text-xl text-dark font-bold w-[120px] h-[37px] text-center lg:w-[129px] lg:h-[41px] md:mx-7 hidden md:block ">Launch
+                        class="bg-[#51F585] hover:bg-[#1fd459] hover:text-white duration-500 text-xl text-dark font-bold w-[120px] h-[37px] text-center lg:w-[129px] lg:h-[41px] md:mx-7 hidden md:block font-pop ">Launch
                         App</button>
                 </a>
 
@@ -44,18 +47,19 @@
             <div>
 
                 <ul
-                    class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-white">
+                    class="md:flex md:items-center  z-10 md:z-auto md:static absolute md:bg-transparent bg-primary-black  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-white">
                     <li class="mx-4 my-6 md:my-0 nav-item">
-                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#">Home</a>
+                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500 font-pop" href="#">Home</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0 nav-item">
-                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#">Vaults</a>
+                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500 font-pop" href="#">Vaults</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0 nav-item">
-                        <a class=" nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#roadmap">Roadmaps</a>
+                        <a class=" nav-link f-sb text-xl hover:text-[#51F585] duration-500 font-pop" href="#roadmap"
+                            id="road">Roadmaps</a>
                     </li>
                     <li class=" mx-4 my-6 md:my-0 nav-item">
-                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500" href="#">Docs</a>
+                        <a class="nav-link f-sb text-xl hover:text-[#51F585] duration-500 font-pop" href="#">Docs</a>
                     </li>
                     <a href="#">
                         <button
@@ -78,20 +82,34 @@
                         class="w-[85%] sm:w-[66%] ml-auto mr-auto h-auto object-contain">
                 </div>
             </div>
-            <div class="col-span-12 lg:col-span-7 ">
+            <div class="col-span-12 lg:col-span-7" id="hero-left">
                 <div class="lg:pt-32  text-center lg:text-left">
-                    <h2 class="text-2xl sm:text-6xl  md:text-8xl text-white font-bold">Meta Finance
+                    <h2 class="text-2xl sm:text-6xl  md:text-8xl text-white font-bold font-pop">Meta Finance
                     </h2><br>
-                    <h3 class="text-lg sm:text-3xl md:text-4xl text-white f-b">The Zksync Era liquidity hub</h3>
-                    <h4 class="text-white sm:text-lg md:text-2xl f-sb">Generate sustainable yield &amp;
+                    <h3 class="text-lg sm:text-3xl md:text-4xl text-white f-b font-pop">The Zksync Era liquidity hub
+                    </h3>
+                    <h4 class="text-white md:pt-2 md:pr-8 sm:text-lg md:text-2xl f-sb font-pop">Generate sustainable
+                        yield &amp;
                         invest like
                         a Venture Capitalist</h4>
+                    <ul class=" my-14 xl:my-20  sm:inline-flex">
+                        <li>
+                            <button type="button"
+                                class="text-black   w-[185px] h-[55px]  bg-[#51F585] font-bold text-lg  font-pop  text-center ">Enter
+                                IDO !</button>
+                        </li>
+                        <li class=" mt-10 sm:mt-0 sm:ml-7">
+                            <button type="button"
+                                class="text-white   w-[185px] h-[55px]  bg-tranparent border border-[#51F585] text-lg text-center font-bold font-pop">Coming
+                                soon !</button>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
-            <div class="col-span-12 lg:col-span-5 hidden lg:block">
+            <div class="col-span-12 lg:col-span-5 hidden lg:block" id="hero-right">
                 <div class="-mt-20 lg:mt-0 lg:pt-0 xl:pt-16">
-                    <img src="./img/hero-img.png" alt=""
+                    <img src="./img/hero-img.png" alt="hero-img"
                         class="w-full h-auto lg:h-[535px] xl:h-[587px] object-contain ">
                 </div>
             </div>
@@ -102,18 +120,25 @@
     <!-- About Section -->
     <div class="about-bg">
         <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto ">
-            <h2 class="text-white text-xl sm:text-5xl f-f-b text-center py-10 hidden sm:block">About Meta Finance</h2>
-            <h2 class="text-white text-xl sm:text-5xl f-f-b text-center py-10  sm:hidden">About</h2>
+            <h2 class=" font-bold text-white text-xl sm:text-5xl  text-center py-10 hidden sm:block font-pop"
+                id="about-head">About Meta
+                Finance
+            </h2>
+            <h2 class="text-white text-xl sm:text-5xl f-f-b text-center py-10  sm:hidden font-pop">About</h2>
             <div class="grid grid-cols-12   gap-6 py-10 ">
-                <div class="col-span-12 lg:col-span-6  ">
+                <div class="col-span-12 lg:col-span-6  " id="about-top">
                     <img src="./img/about-01.png" alt="about-01"
                         class="w-[70%] h-auto sm:w-[504px] sm:h-[336px] ml-auto mr-auto xl:mr-0 ">
                 </div>
-                <div class="col-span-12 lg:col-span-6 text-center lg:text-end ">
-                    <h2 class="text-white text-xl sm:text-4xl  pt-10">
+                <div class="col-span-12 lg:col-span-6 text-center lg:text-end " id="about-top">
+                    <h2 class=" font-bold  text-white text-xl sm:text-4xl font-pop pt-10">
                         About Meta Finance
                     </h2>
-                    <p class="sm:text-lg text-tiny text-white">Sigma Finance is a Community driven passive income and
+                    <p class="sm:text-lg md:text-[1.317rem] md:mt-1 text-tiny text-white f-sb font-pop ">Meta Finance is
+                        a
+                        Community driven
+                        passive
+                        income and
                         asset management protocol that gives investors exclusive investment opportunities in the zksync
                         ecosystem</p>
                     <button class="  text-xl py-8 bg-transparent">
@@ -122,25 +147,29 @@
                                 <ion-icon name="arrow-back-outline" class="text-[#51F585] text-[1.8rem]"></ion-icon>
                             </li>
                             <li class="sm:ml-3">
-                                <a href="#" class="text-[#51F585]">
+                                <a href="#" class="text-[#51F585] md:text-[1.65rem] font-pop">
                                     Read More
                                 </a>
                             </li>
                         </ul>
                     </button>
                 </div>
-                <div class="col-span-12 lg:col-span-6   lg:hidden ">
-                    <img src="./img/about-02.svg" alt="about-02" class="w-[50%] h-auto  ml-auto mr-auto xl:mr-0 ">
+                <div class=" col-span-12 lg:col-span-6 lg:hidden">
+                    <img src=" ./img/about-02.svg" alt="about-02" class="w-[50%] h-auto  ml-auto mr-auto xl:mr-0 ">
                 </div>
-                <div class="col-span-12 lg:col-span-6 text-center lg:text-left">
-                    <h2 class="text-white text-xl sm:text-4xl   lg:pt-10 ">Our Mission</h2>
-                    <p class="sm:text-lg text-tiny text-white">Our mission is to become an essential liquidity and
+                <div class="col-span-12 lg:col-span-6 text-center lg:text-left" id="about-bottom">
+                    <h2 class="text-white text-xl sm:text-4xl   lg:pt-10 font-bold font-pop">Our Mission</h2>
+                    <p class="sm:text-lg text-tiny text-white f-sb md:text-[1.317rem]  md:mt-1 font-pop">Our mission is
+                        to
+                        become
+                        an
+                        essential liquidity and
                         founding center for projects that want to launch on Zksync Era </p>
                     <button class="  text-xl py-8 bg-transparent">
                         <ul class="inline-flex">
 
                             <li class="sm:mr-3">
-                                <a href="#" class="text-[#51F585]">
+                                <a href="#" class="text-[#51F585] md:text-[1.65rem] font-pop">
                                     Read More
                                 </a>
                             </li>
@@ -150,7 +179,7 @@
                         </ul>
                     </button>
                 </div>
-                <div class="col-span-12 lg:col-span-6  hidden lg:block ">
+                <div class="col-span-12 lg:col-span-6  hidden lg:block " id="about-bottom">
                     <img src="./img/about-02.svg" alt="about-02" class=" w-[61%] h-auto  ml-auto mr-auto xl:mr-0 ">
                 </div>
             </div>
@@ -158,12 +187,109 @@
     </div>
     <!-- About Section End-->
 
+
+    <!-- thats why we are section -->
+    <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto  ">
+        <h2 class="text-white text-xl sm:text-5xl text-center pt-36 pb-10 font-bold font-pop" id="thats-head">That's why
+            <span class="text-[#51F585] font-pop">we are</span>
+        </h2>
+        <div class="grid grid-cols-12   gap-6  mt-14 md:mt-20">
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 " id="thats-01">
+                <img src="./img/thats-01.svg" alt="thats-01" class="w-[122px] h-[122px] ml-auto mr-auto">
+                <div class="my-2 text-center h-[254px] sm:h-[302px] md:h-[354px] xl:h-[529px] p-[11px] thats">
+                    <h2 class="text-lg md:text-[1.6rem] text-white mt-5 f-sb font-pop">Community driven</h2>
+                    <p class="text-tiny sm:text-lg text-white mt-5 md:text-[1.2rem] font-pop">Meta is a decentralized
+                        protocol.
+                        It
+                        is therefore
+                        the community that chooses the investments of the Meta Fund and that proposes ideas to improve
+                        and grow the project.</p>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 " id="thats-02">
+                <img src="./img/thats-02.svg" alt="thats-02" class="w-[122px] h-[122px] ml-auto mr-auto">
+                <div class="my-2 text-center h-[254px] sm:h-[302px] md:h-[354px] xl:h-[529px] p-[11px] thats">
+                    <h2 class="text-lg md:text-[1.6rem] text-white mt-5 font-pop">Exclusive</h2>
+                    <p class="text-tiny sm:text-lg text-white mt-5 md:text-[1.2rem] font-pop">Our goal is for our
+                        community
+                        fund
+                        to give you
+                        exclusive access to investment opportunities that are inaccessible to the majority of investors
+                        and originally reserved for institutions and private funds.</p>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 " id="thats-03">
+                <img src="./img/thats-03.svg" alt="thats-03" class="w-[122px] h-[122px] ml-auto mr-auto">
+                <div class="my-2 text-center h-[254px] sm:h-[302px] md:h-[354px] xl:h-[529px] p-[11px] thats">
+                    <h2 class="text-lg md:text-[1.6rem] text-white mt-5 font-pop">Safe and Innovating</h2>
+                    <p class="text-tiny sm:text-lg text-white mt-5 md:text-[1.2rem] font-pop ">In addition to early
+                        stage
+                        investment, our strategy
+                        is 50% diversification through investment in bluechips in the ZK ecosystem. Our team is also
+                        working on creating a launchpad to diversify the protocol's revenue streams, reduce its overall
+                        risk and improve its long-term performance.</p>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 " id="thats-04">
+                <img src="./img/thats-04.svg" alt="thats-04" class="w-[122px] h-[122px] ml-auto mr-auto">
+                <div class="my-2 text-center h-[254px] sm:h-[302px] md:h-[354px] xl:h-[529px] p-[11px] thats">
+                    <h2 class="text-lg md:text-[1.6rem] text-white mt-5 font-pop">Revenue Sharing</h2>
+                    <p class="text-tiny sm:text-lg text-white mt-5 md:text-[1.2rem] font-pop">Meta aims to provide its
+                        users
+                        with
+                        a sustainable
+                        yield so that the protocol can last over time. The protocol therefore allocates 50% of its total
+                        revenue to users via the reward pool (revenue is generated via transaction fees, Meta Fund
+                        profits and Launchpad revenue).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- thats why we are section end -->
+
+    <!-- Main Activites -->
+    <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto py-20 md:relative">
+        <div class="hidden md:block gradient-02"></div>
+        <h1 class="text-xl sm:text-5xl lg:text-6xl f-f-b text-white text-center font-bold font-pop " id="act-head">
+            Our<span class="text-[#51F585]"> Main</span> Activites
+        </h1>
+        <h3 class="text-white text-lg sm:text-xl lg:text-5xl f-f-b text-center pt-20 font-bold font-pop " id="act-head">
+            Meta Fund</h3>
+        <div class="grid grid-cols-12   gap-6 py-16" id="act-body">
+            <div class="col-span-12  sm:col-span-6 md:col-span-4 xl:col-span-4  text-center  ">
+                <h4 class="text-[#51F585] text-3xl md:text-4xl lg:text-5xl font-bold md:mb-4 font-pop ">30%</h4>
+                <h5 class=" text-tiny md:text-base lg:text-lg text-white f-sb font-pop">Yield <br> farming strategies
+                </h5>
+                <img src="./img/act-01.svg" alt="act-01"
+                    class=" h-auto w-[40%]  lg:w-[183px] lg:h-[187px] ml-auto mr-auto my-3" id="act-01">
+            </div>
+            <div class="col-span-12  sm:col-span-6 md:col-span-4 xl:col-span-4  text-center  ">
+                <h4 class="text-[#51F585] text-3xl md:text-4xl lg:text-5xl font-bold md:mb-4 font-pop">40%</h4>
+                <h5 class=" text-tiny md:text-base lg:text-lg text-white f-sb font-pop">early <br> stage investing</h5>
+                <img src="./img/act-02.svg" alt="act-02"
+                    class=" h-auto w-[40%]  lg:w-[183px] lg:h-[187px] ml-auto mr-auto my-3" id="act-02">
+            </div>
+            <div class="col-span-12  sm:col-span-6 md:col-span-4 xl:col-span-4  text-center  ">
+                <h4 class="text-[#51F585] text-3xl md:text-4xl lg:text-5xl font-bold md:mb-4 font-pop">30%</h4>
+                <h5 class=" text-tiny md:text-base lg:text-lg text-white f-sb font-pop">investments <br> in zkSync
+                    bluechip</h5>
+                <img src="./img/act-03.svg" alt="act-03"
+                    class=" h-auto w-[40%]  lg:w-[183px] lg:h-[187px] ml-auto mr-auto my-3" id="act-03">
+            </div>
+        </div>
+    </div>
+    <!-- Main Activites End -->
+
     <!-- LaunchPad Section -->
     <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto py-20 ">
-        <h2 class="text-xl sm:text-5xl lg:text-6xl f-f-b text-white text-center">LaunchPad</h2>
-        <img src="./img/launchpad.svg" alt="launchpad" class="w-[90%] ml-auto mr-auto h-auto py-10">
+        <h2 class="text-xl sm:text-5xl lg:text-6xl f-f-b text-white text-center font-bold font-pop" id="launch-head">
+            Launchpad</h2>
+        <img src="./img/launchpad.svg" alt="launchpad" class="w-[90%] ml-auto mr-auto h-auto py-10" id="launchpad">
         <div class="w-10/12 lg:w-9/12 mx-auto py-5">
-            <p class="text-white f-f-m text-center text-lg sm:text-2xl lg:text-3xl">Sigma Finance aims to launch
+            <p class="text-white md:text-[2.1rem] text-center text-lg sm:text-2xl md:leading-10 font-pop" id="launch-p">
+                Meta Finance
+                aims to
+                launch
                 zkSync’s most promising projects</p>
         </div>
     </div>
@@ -172,15 +298,15 @@
     <!-- RoadMap Section -->
     <div id="roadmap">
         <div class=" w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto py-20  ">
-            <h2 class="text-xl sm:text-5xl lg:text-6xl f-f-b text-[#51F585] text-center">
+            <h2 class="text-xl sm:text-5xl lg:text-6xl font-bold text-[#51F585] text-center font-pop" id="road-head">
                 Road<span class="text-white">map</span>
             </h2>
-            <img src="./img/roadmap.svg" alt="roadmap" class="w-[85%] ml-auto mr-auto py-20">
+            <img src="./img/roadmap.svg" alt="roadmap" class="w-[85%] ml-auto mr-auto py-20" id="road-img">
             <div class="text-center py-14">
                 <a href="#">
                     <button
-                        class="text-white   w-[328px] h-[56px] sm:h-[68px] rounded-[48px]  bg-tranparent border docBtn sm:text-xl    text-center"
-                        type="button">Read documentation</button>
+                        class="text-white   w-[328px] h-[56px] sm:h-[68px] rounded-[48px]  bg-tranparent border docBtn sm:text-xl font-pop text-center"
+                        type="button" id="road-btn">Read documentation</button>
                 </a>
             </div>
         </div>
@@ -189,12 +315,12 @@
 
     <!-- Blog Section -->
     <div class="w-11/12 xl:max-w-[1156px] 2xl:max-w-[1502px] mx-auto pb-20">
-        <h3 class="text-white text-xl lg:text-5xl  text-center ">Recent Blog Posts</h3>
+        <h3 class="text-white text-xl lg:text-5xl  text-center font-bold font-pop" id="blog-head">Recent Blog Posts</h3>
         <div class="border border-grey mt-20 "></div>
-        <ul class="w-full sm:inline-flex">
+        <ul class="w-full sm:inline-flex" id="blog-top">
             <li class="w-full">
                 <a href="#">
-                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left">
+                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left font-pop md:text-2xl ">
                         Public Presale Round and Launch Tokenomics
                     </h4>
                 </a>
@@ -204,10 +330,10 @@
             </li>
         </ul>
         <div class="border border-grey"></div>
-        <ul class="w-full sm:inline-flex">
+        <ul class="w-full sm:inline-flex" id="blog-md">
             <li class="w-full">
                 <a href="#">
-                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left">
+                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left font-pop md:text-2xl">
                         What is Meta Finance ?
                     </h4>
                 </a>
@@ -217,10 +343,10 @@
             </li>
         </ul>
         <div class="border border-grey"></div>
-        <ul class="w-full sm:inline-flex">
+        <ul class="w-full sm:inline-flex" id="blog-bottom">
             <li class="w-full">
                 <a href="#">
-                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left">
+                    <h4 class="text-white text-lg sm:text-xl  mt-16  text-center sm:text-left  font-pop md:text-2xl ">
                         What is coming after $Meta launchpad?
                     </h4>
                 </a>
